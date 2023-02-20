@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Atlas-project</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type="module" defer src="JS/atlasApp.js"></script>
+</head>
+
+<body>
+    <header class="container-fluid">
+        <div class="container">
+            <div class="row justify-content-between align-items-center">
+                <div class="logo col-auto d-flex">
+                    <i class="fa fa-globe" aria-hidden="true"></i>
+                    <h2>Atlas</h2>
+                </div>
+                <nav class="col-auto">
+                    <ul class="p-0 m-0 d-flex list-inline">
+                        <li><a id="nav1" href="#">Israel</a></li>
+                        <li><a id="nav2" href="#">USA</a></li>
+                        <li><a id="nav3" href="#">Thailand</a></li>
+                        <li><a id="nav4" href="#">France</a></li>
+                    </ul>
+                </nav>
+                <div class="col-md-12 col-lg-4  d-flex">
+                    <input id="id_input" type="text" class="form-control">
+                    <button id="btn_Search" class="btn btn-success ms-2">Search</button>
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <main class="container-fluid">
+        <div class="container">
+            <div class="col-8 mx-auto country p-2">
+                <h2 id="id_name">Israel</h2>
+                <img id="id_img" src="" alt="flag" class="col-4 my-3 float-end">
+                <div><strong>Population :</strong> <span id="id_pop"></span></div>
+                <div><strong>Region :</strong> <span id="id_reg"></span></div>
+                <div><strong>Languages :</strong> <span id="id_lang"></span></div>
+                <div><strong>Coin :</strong> <span id="id_coin"></span></div>
+                <div><strong>Capital :</strong> <span id="id_cap"></span></div>
+                <div><strong>States with borders :</strong>
+                    <div id="id_borders" class="p-2"></div>
+                </div>
+                <iframe src="" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+            </div>
+
+    </main>
+
+    <footer class="container-fluid">
+        <div class="container text-center p-3">
+            <h3>Created by <span>Omri Alter</span> </h3>
+            <h4>Email: omrialter3@gmail.com</h4>
+            <div class="icons col-6 d-flex justify-content-evenly mx-auto">
+                <a target="_blank" href="https://www.facebook.com/omri.alter.7/"><i
+                        class="fa fa-facebook-official col-auto" aria-hidden="true"></i></a>
+                <a target="_blank" href="https://www.instagram.com/omrialter/"><i class="fa fa-instagram col-auto"
+                        aria-hidden="true"></i></a>
+                <a target="_blank" href="https://www.linkedin.com/in/omri-alter-b0178922b/"><i
+                        class="fa fa-linkedin-square col-auto" aria-hidden="true"></i></a>
+            </div>
+        </div>
+    </footer>
+
+
+
+</body>
+
+</html>
